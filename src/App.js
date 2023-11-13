@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
-function App() {
+const quotes = ["quote1", "quote2", "quote3", "quote4", "quote5"];
+
+function Panel() {
+  // Start with random quote
+  const [quote, setQuote] = useState(
+    quotes[Math.floor(Math.random() * quotes.length)]
+  );
+
+  const onButtonClick = () => {
+    // Get random quote
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // Update state
+    setQuote(randomQuote);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="quote-box">
+      <p id="text">{quote}</p>
+      <p id="author">- Author</p>
+      <button id="new-quote" onClick={onButtonClick}>
+        New Quote
+      </button>
+      <a id="tweet-quote" href="twitter.com/intent/tweet">
+        Tweet Quote
+      </a>
     </div>
   );
 }
 
-export default App;
+export default Panel;
