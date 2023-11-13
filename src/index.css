@@ -37,8 +37,13 @@ body {
   font-size: large;
 }
 
+#tweet-quote {
+  float: left;
+}
+
 #new-quote {
   border: none;
+  float: right;
 }
 
 .quote-text {

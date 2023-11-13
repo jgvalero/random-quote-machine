@@ -30,7 +30,9 @@ function Panel() {
         className="button"
         target="_blank"
         rel="noreferrer"
-        href="https://twitter.com/intent/tweet"
+        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+          '"' + quote.quote + '" -' + quote.author
+        )}`}
       >
         Tweet Quote
       </a>
