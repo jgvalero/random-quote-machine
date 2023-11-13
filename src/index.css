@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,10 +20,10 @@ body {
 
 #quote-box {
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
   background-color: #eaf6f6;
   color: #f76b8a;
-  width: 50%;
+  width: 30%;
 }
 
 .button {
@@ -26,7 +31,7 @@ body {
   color: #eaf6f6;
   border-radius: 5px;
   padding: 5px;
-  margin: 5px;
+  margin-right: 5px;
   text-decoration: none;
   cursor: pointer;
   font-size: large;
@@ -34,4 +39,16 @@ body {
 
 #new-quote {
   border: none;
+}
+
+.quote-text {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.quote-author {
+  font-size: 1.5em;
+  text-align: right;
+  margin-bottom: 25px;
 }

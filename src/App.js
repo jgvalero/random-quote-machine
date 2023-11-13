@@ -19,8 +19,12 @@ function Panel() {
 
   return (
     <div id="quote-box">
-      <p id="text">{quote.quote}</p>
-      <p id="author">{quote.author}</p>
+      <div class="quote-text">
+        <span id="text">{quote.quote}</span>
+      </div>
+      <div class="quote-author">
+        <span id="author">- {quote.author}</span>
+      </div>
       <a
         id="tweet-quote"
         className="button"

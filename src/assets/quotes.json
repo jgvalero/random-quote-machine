@@ -1,10 +1,14 @@
 [
     {
-        "quote": "She said I wasn’t sponge-worthy. Wouldn’t waste a sponge on me.",
+        "quote": "She said I wasn't sponge-worthy. Wouldn't waste a sponge on me.",
         "author": "Jerry Seinfeld"
     },
     {
-        "quote": "There’s more to life than making shallow, fairly obvious observations.",
+        "quote": "There's more to life than making shallow, fairly obvious observations.",
+        "author": "Jerry Seinfeld"
+    },
+    {
+        "quote": "Hunger will make people do amazing things. I mean, the proof of that is cannibalism.",
         "author": "Jerry Seinfeld"
     },
     {
@@ -14,5 +18,33 @@
     {
         "quote": "I lie every second of the day. My whole life is a sham.",
         "author": "George Costanza"
+    },
+    {
+        "quote": "Yeah, I'm a great quitter. It's one of the few things I do well. I come from a long line of quitters.",
+        "author": "George Costanza"
+    },
+    {
+        "quote": "It's not fair people are seated first come, first served. It should be based on who's hungriest.",
+        "author": "Elaine Benes"
+    },
+    {
+        "quote": "I'm speechless. I'm without speech.",
+        "author":"Elaine Benes"
+    },
+    {
+        "quote": "I'll go, if I don't have to talk.",
+        "author": "Elaine Benes"
+    },
+    {
+        "quote": "Those are my everyday balloons.",
+        "author": "Cosmo Kramer"
+    },
+    {
+        "quote": "Boy, these pretzels are making me thirsty.",
+        "author": "Cosmo Kramer"
+    },
+    {
+        "quote": "Yama hama, it's fright night!",
+        "author": "Cosmo Kramer"
     }
 ]
