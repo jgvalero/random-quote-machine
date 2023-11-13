@@ -1,30 +1,38 @@
 import { useState } from "react";
+import quotes from "./assets/quotes.json";
 
-const quotes = ["quote1", "quote2", "quote3", "quote4", "quote5"];
+function getRandomQuote() {
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
 
 function Panel() {
   // Start with random quote
-  const [quote, setQuote] = useState(
-    quotes[Math.floor(Math.random() * quotes.length)]
-  );
+  const [quote, setQuote] = useState(getRandomQuote);
 
   const onButtonClick = () => {
     // Get random quote
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const randomQuote = getRandomQuote();
 
     // Update state
     setQuote(randomQuote);
   };
+
   return (
     <div id="quote-box">
-      <p id="text">{quote}</p>
-      <p id="author">- Author</p>
-      <button id="new-quote" onClick={onButtonClick}>
-        New Quote
-      </button>
-      <a id="tweet-quote" href="twitter.com/intent/tweet">
+      <p id="text">{quote.quote}</p>
+      <p id="author">{quote.author}</p>
+      <a
+        id="tweet-quote"
+        className="button"
+        target="_blank"
+        rel="noreferrer"
+        href="https://twitter.com/intent/tweet"
+      >
         Tweet Quote
       </a>
+      <button id="new-quote" className="button" onClick={onButtonClick}>
+        New Quote
+      </button>
     </div>
   );
 }
